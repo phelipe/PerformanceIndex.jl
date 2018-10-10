@@ -5,12 +5,24 @@ export iae, ise
     ```julia
     iae(error)
     ```
-    IAE (Integral Absolute Error) fromm error vector.
+    IAE (Integral Absolute Error) from error vector.
     Inputs:
     error -> error vector.
 """
 function iae(error::Vector{T}) where T
     sum(abs.(error))
+end    
+
+"""
+    ```julia
+    iae(error)
+    ```
+    IAE (Integral Absolute Error) from vector of error vector.
+    Inputs:
+    error -> vector of error vector.
+"""
+function iae(error::Vector{Vector{T}}) where T
+    map(x->sum(abs.(x)), error)
 end    
 
 
@@ -39,9 +51,22 @@ end
     Inputs:
     error -> error vector.
 """
-function ise(x::Vector{T}) where T<: AbstractFloat
-    sum((x.^2))
+function ise(error::Vector{T}) where T
+    sum((error.^2))
 end    
+
+"""
+    ```julia
+    ise(error)
+    ```
+    Integral Squared Error (ISE) from vector of error vector.
+    Inputs:
+    error -> vector of error vector.
+"""
+function ise(error::Vector{Vector{T}}) where T
+    map(x->sum((x.^2)), error)
+end    
+
 
 
 """
