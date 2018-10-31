@@ -4,7 +4,12 @@ makedocs(
     modules = [PerformanceIndex],
     format = :html,
     sitename = "PerformanceIndex.jl",
-    pages = Any["index.md"]
+    linkcheck = true,
+    authors = "Phelipe Wesley and contributors.",
+    pages = [
+        "Home" => "index.md",
+        "Details" => "details.md"
+    ]
 )
 
 deploydocs(
