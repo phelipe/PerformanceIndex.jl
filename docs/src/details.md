@@ -12,12 +12,12 @@ iae
 ise
 ```
 
-## ITAE
+## ITAE 
 
 ```@docs
 itae
 ```
-## ITSE
+## ITSE 
 
 ```@docs
 itse
