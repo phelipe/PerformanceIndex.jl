@@ -37,7 +37,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Details",
     "title": "PerformanceIndex.IAE.iae",
     "category": "function",
-    "text": "```julia\niae(error)\n```\nIAE (Integral Absolute Error) from error vector.\nInputs:\nerror -> error vector.\n\n\n\n\n\n```julia\niae(error)\n```\nIAE (Integral Absolute Error) from vector of error vector.\nInputs:\nerror -> vector of error vector.\n\n\n\n\n\n```julia\niae(x, t, desired)\n```\nIAE (Integral Absolute Error) from error betwwen desired value and controler output.\nInputs:\nx -> controler output vector; \nt -> time vector;\ndesired -> desired value function\n\n.\n\n\n\n\n\n"
+    "text": "iae(error)\n\nIAE (Integral Absolute Error) from error vector. Inputs: error -> error vector.\n\n\n\n\n\niae(error)\n\nIAE (Integral Absolute Error) from vector of error vector. Inputs: error -> vector of error vector.\n\n\n\n\n\niae(x, t, desired)\n\nIAE (Integral Absolute Error) from error betwwen desired value and controler output. Inputs: x -> controler output vector;  t -> time vector; desired -> desired value function.\n\n\n\n\n\n"
 },
 
 {

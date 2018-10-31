@@ -1,74 +1,57 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Details · PerformanceIndex.jl</title><link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Mono" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL="."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js" data-main="assets/documenter.js"></script><script src="siteinfo.js"></script><script src="../versions.js"></script><link href="assets/documenter.css" rel="stylesheet" type="text/css"/></head><body><nav class="toc"><h1>PerformanceIndex.jl</h1><select id="version-selector" onChange="window.location.href=this.value" style="visibility: hidden"></select><form class="search" id="search-form" action="search.html"><input id="search-query" name="q" type="text" placeholder="Search docs"/></form><ul><li><a class="toctext" href="index.html">Home</a></li><li class="current"><a class="toctext" href="details.html">Details</a><ul class="internal"><li><a class="toctext" href="#IAE-1">IAE</a></li><li><a class="toctext" href="#ISE-1">ISE</a></li><li><a class="toctext" href="#ITAE-1">ITAE</a></li><li><a class="toctext" href="#ITSE-1">ITSE</a></li></ul></li></ul></nav><article id="docs"><header><nav><ul><li><a href="details.html">Details</a></li></ul><a class="edit-page" href="https://github.com/phelipe/PerformanceIndex.jl/blob/master/docs/src/details.md"><span class="fa"></span> Edit on GitHub</a></nav><hr/><div id="topbar"><span>Details</span><a class="fa fa-bars" href="#"></a></div></header><h1><a class="nav-anchor" id="Details-1" href="#Details-1">Details</a></h1><h2><a class="nav-anchor" id="IAE-1" href="#IAE-1">IAE</a></h2><section class="docstring"><div class="docstring-header"><a class="docstring-binding" id="PerformanceIndex.IAE.iae" href="#PerformanceIndex.IAE.iae"><code>PerformanceIndex.IAE.iae</code></a> — <span class="docstring-category">Function</span>.</div><div><div><pre><code class="language-none">```julia
-iae(error)
-```
-IAE (Integral Absolute Error) from error vector.
-Inputs:
-error -&gt; error vector.</code></pre></div></div><a class="source-link" target="_blank" href="https://github.com/phelipe/PerformanceIndex.jl/blob/fb537c53e87b001e31a539eda8bbefa5e41c651e/src/IAE.jl#L5-L12">source</a><div><div><pre><code class="language-none">```julia
-iae(error)
-```
-IAE (Integral Absolute Error) from vector of error vector.
-Inputs:
-error -&gt; vector of error vector.</code></pre></div></div><a class="source-link" target="_blank" href="https://github.com/phelipe/PerformanceIndex.jl/blob/fb537c53e87b001e31a539eda8bbefa5e41c651e/src/IAE.jl#L17-L24">source</a><div><div><pre><code class="language-none">```julia
-iae(x, t, desired)
-```
-IAE (Integral Absolute Error) from error betwwen desired value and controler output.
-Inputs:
-x -&gt; controler output vector; 
-t -&gt; time vector;
-desired -&gt; desired value function</code></pre><p>.</p></div></div><a class="source-link" target="_blank" href="https://github.com/phelipe/PerformanceIndex.jl/blob/fb537c53e87b001e31a539eda8bbefa5e41c651e/src/IAE.jl#L30-L41">source</a></section><h2><a class="nav-anchor" id="ISE-1" href="#ISE-1">ISE</a></h2><section class="docstring"><div class="docstring-header"><a class="docstring-binding" id="PerformanceIndex.ISE.ise" href="#PerformanceIndex.ISE.ise"><code>PerformanceIndex.ISE.ise</code></a> — <span class="docstring-category">Function</span>.</div><div><div><pre><code class="language-none">```julia
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Details · PerformanceIndex.jl</title><link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Mono" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL="."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js" data-main="assets/documenter.js"></script><script src="siteinfo.js"></script><script src="../versions.js"></script><link href="assets/documenter.css" rel="stylesheet" type="text/css"/></head><body><nav class="toc"><h1>PerformanceIndex.jl</h1><select id="version-selector" onChange="window.location.href=this.value" style="visibility: hidden"></select><form class="search" id="search-form" action="search.html"><input id="search-query" name="q" type="text" placeholder="Search docs"/></form><ul><li><a class="toctext" href="index.html">Home</a></li><li class="current"><a class="toctext" href="details.html">Details</a><ul class="internal"><li><a class="toctext" href="#IAE-1">IAE</a></li><li><a class="toctext" href="#ISE-1">ISE</a></li><li><a class="toctext" href="#ITAE-1">ITAE</a></li><li><a class="toctext" href="#ITSE-1">ITSE</a></li></ul></li></ul></nav><article id="docs"><header><nav><ul><li><a href="details.html">Details</a></li></ul><a class="edit-page" href="https://github.com/phelipe/PerformanceIndex.jl/blob/master/docs/src/details.md"><span class="fa"></span> Edit on GitHub</a></nav><hr/><div id="topbar"><span>Details</span><a class="fa fa-bars" href="#"></a></div></header><h1><a class="nav-anchor" id="Details-1" href="#Details-1">Details</a></h1><h2><a class="nav-anchor" id="IAE-1" href="#IAE-1">IAE</a></h2><section class="docstring"><div class="docstring-header"><a class="docstring-binding" id="PerformanceIndex.IAE.iae" href="#PerformanceIndex.IAE.iae"><code>PerformanceIndex.IAE.iae</code></a> — <span class="docstring-category">Function</span>.</div><div><div><pre><code class="language-julia">iae(error)</code></pre><p>IAE (Integral Absolute Error) from error vector. Inputs: error -&gt; error vector.</p></div></div><a class="source-link" target="_blank" href="https://github.com/phelipe/PerformanceIndex.jl/blob/89ef9a16672748088b36c83d7ca24b68c9ff7450/src/IAE.jl#L5-L12">source</a><div><div><pre><code class="language-julia">iae(error)</code></pre><p>IAE (Integral Absolute Error) from vector of error vector. Inputs: error -&gt; vector of error vector.</p></div></div><a class="source-link" target="_blank" href="https://github.com/phelipe/PerformanceIndex.jl/blob/89ef9a16672748088b36c83d7ca24b68c9ff7450/src/IAE.jl#L17-L24">source</a><div><div><pre><code class="language-julia">iae(x, t, desired)</code></pre><p>IAE (Integral Absolute Error) from error betwwen desired value and controler output. Inputs: x -&gt; controler output vector;  t -&gt; time vector; desired -&gt; desired value function.</p></div></div><a class="source-link" target="_blank" href="https://github.com/phelipe/PerformanceIndex.jl/blob/89ef9a16672748088b36c83d7ca24b68c9ff7450/src/IAE.jl#L30-L40">source</a></section><h2><a class="nav-anchor" id="ISE-1" href="#ISE-1">ISE</a></h2><section class="docstring"><div class="docstring-header"><a class="docstring-binding" id="PerformanceIndex.ISE.ise" href="#PerformanceIndex.ISE.ise"><code>PerformanceIndex.ISE.ise</code></a> — <span class="docstring-category">Function</span>.</div><div><div><pre><code class="language-none">```julia
 ise(error)
 ```
 Integral Squared Error (ISE) fromm error vector.
 Inputs:
-error -&gt; error vector.</code></pre></div></div><a class="source-link" target="_blank" href="https://github.com/phelipe/PerformanceIndex.jl/blob/fb537c53e87b001e31a539eda8bbefa5e41c651e/src/ISE.jl#L5-L12">source</a><div><div><pre><code class="language-none">```julia
+error -&gt; error vector.</code></pre></div></div><a class="source-link" target="_blank" href="https://github.com/phelipe/PerformanceIndex.jl/blob/89ef9a16672748088b36c83d7ca24b68c9ff7450/src/ISE.jl#L5-L12">source</a><div><div><pre><code class="language-none">```julia
 ise(error)
 ```
 Integral Squared Error (ISE) from vector of error vector.
 Inputs:
-error -&gt; vector of error vector.</code></pre></div></div><a class="source-link" target="_blank" href="https://github.com/phelipe/PerformanceIndex.jl/blob/fb537c53e87b001e31a539eda8bbefa5e41c651e/src/ISE.jl#L17-L24">source</a><div><div><pre><code class="language-none">```julia
+error -&gt; vector of error vector.</code></pre></div></div><a class="source-link" target="_blank" href="https://github.com/phelipe/PerformanceIndex.jl/blob/89ef9a16672748088b36c83d7ca24b68c9ff7450/src/ISE.jl#L17-L24">source</a><div><div><pre><code class="language-none">```julia
 ise(x, t, desired)
 ```
 Integral Squared Error (ISE) from error betwwen desired value and controler output.
 Inputs:
 x -&gt; controler output vector;
 t -&gt; time vector;
-desired -&gt; desired value function.</code></pre></div></div><a class="source-link" target="_blank" href="https://github.com/phelipe/PerformanceIndex.jl/blob/fb537c53e87b001e31a539eda8bbefa5e41c651e/src/ISE.jl#L31-L40">source</a></section><h2><a class="nav-anchor" id="ITAE-1" href="#ITAE-1">ITAE</a></h2><section class="docstring"><div class="docstring-header"><a class="docstring-binding" id="PerformanceIndex.ITAE.itae" href="#PerformanceIndex.ITAE.itae"><code>PerformanceIndex.ITAE.itae</code></a> — <span class="docstring-category">Function</span>.</div><div><div><pre><code class="language-none">```julia
+desired -&gt; desired value function.</code></pre></div></div><a class="source-link" target="_blank" href="https://github.com/phelipe/PerformanceIndex.jl/blob/89ef9a16672748088b36c83d7ca24b68c9ff7450/src/ISE.jl#L31-L40">source</a></section><h2><a class="nav-anchor" id="ITAE-1" href="#ITAE-1">ITAE</a></h2><section class="docstring"><div class="docstring-header"><a class="docstring-binding" id="PerformanceIndex.ITAE.itae" href="#PerformanceIndex.ITAE.itae"><code>PerformanceIndex.ITAE.itae</code></a> — <span class="docstring-category">Function</span>.</div><div><div><pre><code class="language-none">```julia
 itae(error, time)
 ```
 ITAE (Integral of Time-Weighted Absolute Error) from error vector.
 Inputs:
 error -&gt; error vector.
-time  -&gt; time vector.</code></pre></div></div><a class="source-link" target="_blank" href="https://github.com/phelipe/PerformanceIndex.jl/blob/fb537c53e87b001e31a539eda8bbefa5e41c651e/src/ITAE.jl#L5-L13">source</a><div><div><pre><code class="language-none">```julia
+time  -&gt; time vector.</code></pre></div></div><a class="source-link" target="_blank" href="https://github.com/phelipe/PerformanceIndex.jl/blob/89ef9a16672748088b36c83d7ca24b68c9ff7450/src/ITAE.jl#L5-L13">source</a><div><div><pre><code class="language-none">```julia
 itae(error, time)
 ``` 
 ITAE (Integral of Time-Weighted Absolute Error) from vector of error vector.
 Inputs:
 error -&gt; vector of error vector.
-time  -&gt; time vector.</code></pre></div></div><a class="source-link" target="_blank" href="https://github.com/phelipe/PerformanceIndex.jl/blob/fb537c53e87b001e31a539eda8bbefa5e41c651e/src/ITAE.jl#L18-L26">source</a><div><div><pre><code class="language-none">```julia
+time  -&gt; time vector.</code></pre></div></div><a class="source-link" target="_blank" href="https://github.com/phelipe/PerformanceIndex.jl/blob/89ef9a16672748088b36c83d7ca24b68c9ff7450/src/ITAE.jl#L18-L26">source</a><div><div><pre><code class="language-none">```julia
 itae(x, t, desired)
 ```
 ITAE (Integral of Time-Weighted Absolute Error) from error betwwen desired value and controler output.
 Inputs:
 x -&gt; controler output vector.
 t -&gt; time vector.
-desired -&gt; desired value function.</code></pre></div></div><a class="source-link" target="_blank" href="https://github.com/phelipe/PerformanceIndex.jl/blob/fb537c53e87b001e31a539eda8bbefa5e41c651e/src/ITAE.jl#L32-L42">source</a></section><h2><a class="nav-anchor" id="ITSE-1" href="#ITSE-1">ITSE</a></h2><section class="docstring"><div class="docstring-header"><a class="docstring-binding" id="PerformanceIndex.ITSE.itse" href="#PerformanceIndex.ITSE.itse"><code>PerformanceIndex.ITSE.itse</code></a> — <span class="docstring-category">Function</span>.</div><div><div><pre><code class="language-none">```julia
+desired -&gt; desired value function.</code></pre></div></div><a class="source-link" target="_blank" href="https://github.com/phelipe/PerformanceIndex.jl/blob/89ef9a16672748088b36c83d7ca24b68c9ff7450/src/ITAE.jl#L32-L42">source</a></section><h2><a class="nav-anchor" id="ITSE-1" href="#ITSE-1">ITSE</a></h2><section class="docstring"><div class="docstring-header"><a class="docstring-binding" id="PerformanceIndex.ITSE.itse" href="#PerformanceIndex.ITSE.itse"><code>PerformanceIndex.ITSE.itse</code></a> — <span class="docstring-category">Function</span>.</div><div><div><pre><code class="language-none">```julia
 itse(error, time)
 ```
 Integral of Time-Weighted Squared Error (ITSE) fromm error vector.
 Inputs:
 error -&gt; error vector.
-time  -&gt; time vector.</code></pre></div></div><a class="source-link" target="_blank" href="https://github.com/phelipe/PerformanceIndex.jl/blob/fb537c53e87b001e31a539eda8bbefa5e41c651e/src/ITSE.jl#L5-L13">source</a><div><div><pre><code class="language-none">```julia
+time  -&gt; time vector.</code></pre></div></div><a class="source-link" target="_blank" href="https://github.com/phelipe/PerformanceIndex.jl/blob/89ef9a16672748088b36c83d7ca24b68c9ff7450/src/ITSE.jl#L5-L13">source</a><div><div><pre><code class="language-none">```julia
 itse(error, time)
 ```
 Integral of Time-Weighted Squared Error (ITSE) from vector of error vector.
 Inputs:
 error -&gt; vector of error vector.
-time  -&gt; time vector.</code></pre></div></div><a class="source-link" target="_blank" href="https://github.com/phelipe/PerformanceIndex.jl/blob/fb537c53e87b001e31a539eda8bbefa5e41c651e/src/ITSE.jl#L18-L26">source</a><div><div><pre><code class="language-none">```julia
+time  -&gt; time vector.</code></pre></div></div><a class="source-link" target="_blank" href="https://github.com/phelipe/PerformanceIndex.jl/blob/89ef9a16672748088b36c83d7ca24b68c9ff7450/src/ITSE.jl#L18-L26">source</a><div><div><pre><code class="language-none">```julia
 itse(x, t, desired)
 ```
 Integral of Time-Weighted Squared Error (ITSE) from error betwwen desired value and controler output.
 Inputs:
 x -&gt; controler output vector;
 t -&gt; time vector;
-desired -&gt; desired value function.</code></pre></div></div><a class="source-link" target="_blank" href="https://github.com/phelipe/PerformanceIndex.jl/blob/fb537c53e87b001e31a539eda8bbefa5e41c651e/src/ITSE.jl#L33-L42">source</a></section><footer><hr/><a class="previous" href="index.html"><span class="direction">Previous</span><span class="title">Home</span></a></footer></article></body></html>
+desired -&gt; desired value function.</code></pre></div></div><a class="source-link" target="_blank" href="https://github.com/phelipe/PerformanceIndex.jl/blob/89ef9a16672748088b36c83d7ca24b68c9ff7450/src/ITSE.jl#L33-L42">source</a></section><footer><hr/><a class="previous" href="index.html"><span class="direction">Previous</span><span class="title">Home</span></a></footer></article></body></html>
